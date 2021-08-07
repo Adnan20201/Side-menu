@@ -1,0 +1,88 @@
+h1,h2,h3,h4,h5,h6
+p,span, 
+ul{
+    margin:0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+#sidebar{
+    width: 350px;
+    height: 100%;
+    background-color: #212529;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:25px 30px;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+#sidebar #navbar{
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+#sidebar::-webkit-scrollbar{
+    width:10px;
+    background-color: #1b1818;
+}
+#sidebar::-webkit-scrollbar-thumb{
+    background-color: #201e1e;
+    border-radius: 30px;
+}
+#sidebar .logo {
+    margin-left: 30px;
+}
+#sidebar .logo .thum a{
+    display:block;
+}
+#sidebar .logo .thum a img{
+    margin-top:20px;
+    margin-bottom: 10px;
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
+#sidebar .logo .title a{
+    display: block;
+    font-size: 35px;
+    margin-top:8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family:cursive;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(219, 212, 212, 0.3);
+}
+#sidebar ul li a{
+    display: inline-block;
+    color: rgb(250, 237, 237);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-bottom:1px solid rgba(219, 212, 212, 0.3) ;
+}
+#sidebar ul li ul{
+    margin-left:30px;
+}
+#sidebar ul li ul li{
+    font-size: 14px;
+    text-transform: lowercase;
+}
+#sidebar #sidebar-toggle-btn{
+    background-color: rgba(219, 212, 212, 0.3) ;
+}
+#sidebar #sidebar-toggle-btn::after{
+    content: '\f00d';
+    font-family:'font Awesome 5 Free';
+    font-weight: 600;
+    background-color: rgb(197, 194, 194);
+    position: absolute;
+    left: 90%;
+    top: 20px;
+}
+ 
